@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: rgb(3, 60, 110);
+    height: 80vh;
+}
+.container{
+    background-color: hsl(0, 78%, 38%);
+    width: 50%;
+    height: 50%;
+   margin: 30vh auto;
+    display: grid;
+    border: 2px solid pink;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: ; */
+    gap: 5px;
+    grid-template-areas: 
+    'one one one  two two'
+    'one one one  two two'
+    'three three four four four'
+    'three three five five five';
+}
+
+
+.one{
+    background-color: orangered;
+    grid-area: one;
+}
+.two{
+    background-color: dodgerblue;
+    grid-area: two;
+}
+.three{
+    background-color: peru;
+    grid-area: three;
+}
+.four{
+    background-color: goldenrod;
+    grid-area: four;
+}
+.five{
+    background-color: limegreen;
+    grid-area: five;
+}
+
+@media only screen and(max-width: 600px){
+   body{
+    width: 375px;
+   }
+    .container{
+        background-color: hsl(0, 78%, 38%);
+        width: 50%;
+        height: 50%;
+       margin: 30vh auto;
+        display: grid;
+        border: 2px solid pink;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
+}
+.one{
+    background-color: orangered;
+    grid-area: one;
+}
+.two{
+    background-color: dodgerblue;
+    grid-area: two;
+}
+.three{
+    background-color: peru;
+    grid-area: three;
+}
+.four{
+    background-color: goldenrod;
+    grid-area: four;
+}
+.five{
+    background-color: limegreen;
+    grid-area: five;
+}
+}
