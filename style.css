@@ -95,3 +95,16 @@ p{
     flex-direction: column;
 }
 }
+
+/*styling for grid link  */
+.linkToGrid, a{
+	display: flex;
+	justify-content: center;
+/* 	text-decoration: none; */
+	color: #444;
+	font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
