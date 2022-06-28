@@ -88,3 +88,16 @@ body{
     grid-area: five;
 }
 }
+
+/*styling for grid link  */
+.linkToHtml, a{
+	display: flex;
+	justify-content: center;
+/* 	text-decoration: none; */
+	color: #c9c9c9;
+	font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: -30px;
+}
